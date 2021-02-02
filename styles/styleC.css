@@ -1,0 +1,439 @@
+@font-face {
+	font-family: "Monsterrat";
+	src: url("fonts/Montserrat-Medium.ttf") ;
+}
+@font-face {
+	font-family: "Monsterrat light";
+	src: url("fonts/Montserrat-Thin.ttf") ;
+}
+@font-face {
+	font-family: "Monsterrat bold";
+	src: url("fonts/Montserrat-ExtraBold.ttf") ;
+}
+@font-face {
+	font-family: "Amanska";
+	src: url("fonts/Amanda-Regular.ttf") ;
+}
+
+
+/**************Main pagina en font styling**************/
+
+body { 
+	position: relative;
+	display: block;
+    background-color: white;
+    margin:auto;
+    box-sizing: border-box;
+}
+
+
+h1,h2,h3,h4,p{
+	font-family: 'Monsterrat';
+	font-weight: 400;
+	text-align: center;
+}
+
+
+h1{
+	font-size: 2em;	
+	margin: auto;
+}
+
+h2{
+	text-decoration: underline;
+}
+section,div {
+	margin: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/**************Hidden styling**************/
+.hidden {
+	position: absolute;
+	visibility: hidden;
+}
+
+/**************Header en Navigation styling**************/
+header {
+ 	position:relative;
+	top:0;
+	left:0;
+	right:0;
+	margin:0; padding:.4em;
+	display: block;	
+	background-color: #FFDA47;
+}
+
+header p {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align: center;
+}
+
+nav {
+	font-family: 'Monsterrat';
+}
+
+nav a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+nav a:focus{
+	color: #FFB300;
+}
+
+nav a:hover{
+	color: #FFB300;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	margin: 0;
+	padding: 0;
+
+}
+nav li {
+	margin: 1em;
+	padding: 0;
+}
+/**************Introduction styling**************/
+.introduction {
+	position: relative;
+	align-items: center;
+	margin: 0;
+	padding: 1em;
+	background-color:#1F1E1E;
+	box-shadow: 1em 1em .5em #EAEAEA;
+}
+
+.introduction h2 {
+	position: relative;
+	font-family: 'Amanska';
+	padding: .5em;
+	margin: 0;
+	color: white;
+	font-weight: 900;
+	font-size: 3em;
+}
+
+.introduction img {
+	position: relative;
+    max-width: 20em;
+   	border-radius: 50%;
+}
+
+/*.introduction p {
+	display: block;
+	padding: 1em;
+	color: white;
+}
+
+.introductiontext {
+	position: absolute;
+	display: inline;
+	left: 0;
+	top:0;
+	margin: auto;
+}*/
+/**************Speciaal button media socials styling***********/
+/* Style all font awesome icons */
+.fa {
+	padding: 1em;
+	font-size: 1em;
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+	opacity: 0.7;
+	color: #F2B957;
+	transition: .3s;
+}
+
+/* Set a specific color for each brand */
+
+/* Twitter */
+.fa-twitter {
+	background: #83F4F8;
+	color: white;
+}
+
+
+.fa-instagram {
+	background: #F38E44;
+	color: white;
+}
+
+.fa-youtube {
+	background: #F95E5E;
+	color: white;
+}
+
+
+
+button {
+	position: relative;
+	display: inline;
+	margin: auto;
+	background: transparent;
+	border-style: none;
+}
+
+button:focus {
+	transform: translateY(3px);
+}
+button:hover {
+	transform: translateY(3px);
+}  
+/*button {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items:center;
+	margin:0; padding:.5em;
+	height: auto;
+	max-width: 100%;
+}*/
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: .5s;
+	animation-name: fade;
+	animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+img {
+    display: block;
+    max-height: auto;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+
+/**************codepen code carrousel**************/
+.testimonials {
+   max-width: 100em;
+   margin: auto;
+   position: relative;
+}
+.testimonials .btn {
+   position: absolute;
+   top: 50%;
+   margin-top: 20px;
+   height: 30px;
+   width: 30px;
+   border-radius: 15px;
+   background-color: rgba(95, 106, 117, 0.3);
+   z-index: 1;
+   line-height: 30px;
+   text-align: center;
+   color: white;
+   font-weight: bold;
+}
+.testimonials .btn:hover {
+   background-color: rgba(95, 106, 117, 0.5);
+   cursor: pointer;
+}
+.testimonials .btn.next {
+   right: 15px;
+}
+.testimonials .btn.prev {
+   left: 15px;
+}
+.scroller {
+	padding: 2em;
+   overflow-x: scroll;
+   display: flex;
+   scroll-snap-type: x mandatory;
+   background-color:#1F1E1E;
+}
+.item {
+   min-width: 100%;
+   min-height: 5em;
+   scroll-snap-align: center;
+}
+.TOStext {
+	color: black;
+	background-color:#FFDA47;
+	box-shadow: 1em 1em .5em #EAEAEA;
+	padding: .5em;
+	max-width: 30%;
+	margin-bottom: 2em;
+}
+.item img {
+	min-width: 10%;
+}
+
+article:hover {
+	background-color:#F6F0EB;
+  	transform: translateY(3px);
+  	transition: .3s;
+}
+
+
+header img:hover {
+  	transform: translateY(3px);
+  	transition: .3s;
+}
+
+
+
+main > section:nth-of-type(3) {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: start;
+	grid-gap: 1 rem;
+}
+
+main > section container:nth-of-type(4) {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: start;
+	grid-gap: 1 rem;
+}
+
+/**************Footer styling**************/
+
+
+
+
+footer {
+	font-family: 'source sans light';
+ 	position:relative;
+	top:0;
+	left:0;
+	right:0;
+	margin:0; padding:.5em;
+	background-color: #FFDA47;
+}
+
+footer p {
+	position: relative;
+	padding: 0;
+	font-family: 'Monsterrat light';
+	font-weight: 1000;
+	margin: 0;
+}
+
+
+/**************Alle focus elementen**************/
+
+article:focus {
+	transition: .3s;
+	outline: 3px #DCC8C8;
+	background: #F6F0EB;	
+}
+button:focus {
+	transition: .3s;
+	outline: 3px #DCC8C8;
+}
+a:focus {
+	transition: .3s;
+	outline: 3px #DCC8C8;
+	background: #F6F0EB;	
+}
+form:focus {
+	transition: .3s;
+	outline: 3px #DCC8C8;
+	background: #F6F0EB;	
+}
+/*************Media element posities code*******/
+/*************Media element posities code*******/
+
+
+@media (min-width: 40em){
+
+	.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+	}
+
+	.gallery article {
+	}
+
+	.gallery h2 {
+	grid-column: 1 / -1;	
+	}
+
+	.gallery p {
+	grid-column: 1 / -1;	
+	}
+}
+
+@media (min-width: 60em){
+
+	.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: start;
+	}
+}
+
+@media (min-width: 75em){
+
+	.gallery {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: start;
+	}
+}
+
+@media (min-width: 40em){
+
+	main > section:nth-of-type(3) {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+	}
+
+	main > section:nth-of-type(3) article {
+	}
+
+	main > section:nth-of-type(3) h2 {
+	grid-column: 1 / -1;	
+	}
+}
+
+@media (min-width: 60em){
+
+	main > section:nth-of-type(3) {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: start;
+	}
+}
+
+@media (min-width: 75em){
+
+	main > section:nth-of-type(3) {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: start;
+	}
+}
+
+/*wilditwerken*/

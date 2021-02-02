@@ -1,0 +1,256 @@
+body,html {
+  font: bold 14px/1.4 'Open Sans', arial, sans-serif;
+  background: #FBFBF9;
+  margin:auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*{
+  padding: 0 3em;
+}
+
+@font-face {
+  font-family: "Monsterrat";
+  src: url("fonts/Montserrat-Medium.ttf") ;
+}
+@font-face {
+  font-family: "Monsterrat light";
+  src: url("fonts/Montserrat-Thin.ttf") ;
+}
+@font-face {
+  font-family: "Monsterrat bold";
+  src: url("fonts/Montserrat-ExtraBold.ttf") ;
+}
+@font-face {
+  font-family: "Amanska";
+  src: url("fonts/Amanda-Regular.ttf") ;
+}
+
+h1,h2,h3,h4,p{
+  font-family: 'Monsterrat';
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+}
+
+ul { 
+  margin: .5em auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+li { 
+  display: table-cell; 
+  position: relative; 
+  padding: .4em 0;
+}
+a {
+  color: #131313;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  
+  display: inline-block;
+  padding: 1em 1.2em;
+  position: relative;
+}
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #F6BE15;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+h1 {
+  font-family: 'Monsterrat bold';
+  font-size: 130px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.introtext {
+  position: relative;
+  display: block;
+}
+
+.yella {
+  color: #FFDA47;
+}
+
+/**************Main pagina en font styling**************/
+
+section,div {
+  background-color: #FBFBF9;
+  display: flex;
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/**************Hidden styling**************/
+.hidden {
+  position: absolute;
+  visibility: hidden;
+}
+
+/**************Header en Navigation styling**************/
+header {
+  position:relative;
+  top:0;
+  left:0;
+  right:0;
+  margin:0; padding:.4em;
+  display: block; 
+  background-color: #FFDA47;
+}
+
+header p {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+}
+
+nav {
+  font-family: 'Monsterrat';
+}
+
+button {
+  position: relative;
+  display: block;
+  margin: auto;
+  background: transparent;
+  border-style: none;
+}
+
+button:focus {
+  transform: translateY(3px);
+}
+button:hover {
+  transform: translateY(3px);
+}  
+
+/*button {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  margin:0; padding:.5em;
+  height: auto;
+  max-width: 100%;
+}*/
+/* Fading animation */
+/**************codepen code carrousel**************/
+.text {
+  width:40em;
+  background-color: #FBFBF9;
+  padding: 1em;
+  margin: auto;
+}
+/**************Standaard styling IMG**************/
+
+.effect:hover {
+  transition: .3s;
+  transform: translateY(3px);
+}
+
+img {
+    display: block;
+    max-height: auto;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+.introimg {
+    position: relative;
+    max-height: auto;
+    max-width: auto;
+    margin: 0 auto;
+    padding: .5em;
+}
+.down {
+  position: absolute;
+}
+
+article:hover {
+  background-color:#F6F0EB;
+    transform: translateY(3px);
+    transition: .3s;
+}
+
+
+header img:hover {
+    transform: translateY(3px);
+    transition: .3s;
+}
+
+/*wilditwerken*/
+
+.fade-in {
+  animation: fadeIn ease 2.5s;
+  -webkit-animation: fadeIn ease 2.5s;
+  -moz-animation: fadeIn ease 2.5s;
+  -o-animation: fadeIn ease 2.5s;
+  -ms-animation: fadeIn ease 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
